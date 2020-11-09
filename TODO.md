@@ -3,7 +3,7 @@
 ## Main package
 
 - [ ] [README.rst](./README.rst) transforms in markdown format
-- [ ] [CONTRIBUTING.rst](./CONTRIBUTING.rst) transforms in markdown format
+- [x] [CONTRIBUTING.rst](./CONTRIBUTING.rst) transforms in markdown format
 - [ ] Sphinx integrate my configuration
 - [x] Migrate to Poetry
 - [x] Change licence to MIT
