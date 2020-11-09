@@ -28,7 +28,7 @@ classifiers = [
 ]
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.6"
 
 [tool.poetry.dev-dependencies]
 pytest = "<6.0.0"
@@ -79,11 +79,13 @@ legacy_tox_ini = """
 [tox]
 envlist = py36, py37, py38, py39
 skipsdist = true
+isolated_build = true
 
 [testenv]
-setenv = PYTHONPATH = {toxinidir}
-deps = pytest >= 3.4.0, <6
-commands = pytest
+whitelist_externals = poetry
+commands =
+    poetry install -v
+    poetry run pytest tests/
 """
 
 [build-system]
