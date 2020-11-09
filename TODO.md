@@ -1,5 +1,7 @@
 # TODO list
 
+## Main package
+
 - [ ] [README.rst](./README.rst) transforms in markdown format
 - [ ] [CONTRIBUTING.rst](./CONTRIBUTING.rst) transforms in markdown format
 - [ ] Sphinx integrate my configuration
@@ -10,4 +12,6 @@
 - [ ] Integration automation gitlab
 - [x] Make a [.flake8](./.flake8) configuration
 - [x] Integrate `tox` setup in [pyproject.toml](./pyproject.toml)
-- [ ] Update [Makefile](./Makefile)
+- [x] Update [Makefile](./Makefile)
+
+## Template package
