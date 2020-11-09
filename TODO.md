@@ -13,5 +13,6 @@
 - [x] Make a [.flake8](./.flake8) configuration
 - [x] Integrate `tox` setup in [pyproject.toml](./pyproject.toml)
 - [x] Update [Makefile](./Makefile)
+- [ ] Add coverage ?
 
 ## Template package
