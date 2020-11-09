@@ -38,6 +38,7 @@ pytest-cookies = "^0.5.1"
 watchdog = "^0.10.3"
 flake8 = "^3.8.4"
 black = "^20.8b1"
+PyYAML = "^5.3.1"
 
 [tool.pytest.ini_options]
 minversion = "6.0"
