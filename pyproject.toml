@@ -53,7 +53,7 @@ use_parentheses="True"
 line_length="79"
 
 [tool.black]
-line-length="88"
+line-length="79"
 include = '\.pyi?$'
 exclude = '''
 (
