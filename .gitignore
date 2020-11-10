@@ -99,3 +99,13 @@ cookiecutter-pypackage-env/
 
 # IDE settings
 .vscode/
+
+# Backups
+*.new/
+*.old/
+*.old
+*.back
+*.backup
+
+# MkDocs
+site/
