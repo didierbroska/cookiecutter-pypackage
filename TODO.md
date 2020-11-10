@@ -20,6 +20,6 @@
 - [ ] Add bump2version without Poetry.
 - [ ] Python setup (pyenv, poetry, pipx and ...)
 - [ ] Makefile test if poetry or virtualenv
-- [ ] Reinternalize tox config in pyproject.toml
+- [x] Reinternalize tox config in pyproject.toml
 
 ## Template package

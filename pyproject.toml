@@ -77,6 +77,21 @@ exclude = '''
 )
 '''
 
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+envlist = py36, py37, py38, py39
+skipsdist = true
+isolated_build = true
+
+[testenv]
+whitelist_externals = poetry
+commands =
+    poetry install -v
+    poetry run safety check
+    poetry run pytest tests/
+"""
+
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
