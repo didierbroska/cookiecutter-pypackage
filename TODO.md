@@ -19,5 +19,6 @@
 - [ ] Git stash
 - [ ] Add bump2version without Poetry.
 - [ ] Python setup (pyenv, poetry, pipx and ...)
+- [ ] Makefile test if poetry or virtualenv
 
 ## Template package
