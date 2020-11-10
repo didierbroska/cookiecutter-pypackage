@@ -55,7 +55,7 @@ install: ## install dependencies
 lock: ## lock dependencies
 	poetry lock
 
-clean: clean-build clean-pyc clean-test ## remove all build, test, coverage and Python artifacts
+clean: clean-build clean-pyc clean-test clean-docs ## remove all build, test, coverage and Python artifacts
 
 clean-build: ## remove build artifacts
 	rm -fr build/
@@ -75,6 +75,9 @@ clean-test: ## remove test and coverage artifacts
 	rm -f .coverage
 	rm -fr htmlcov/
 	rm -fr .pytest_cache
+
+clean-docs: ## remove building documentation
+	rm -rf site/
 
 test: ## run tests quickly with the default Python
 	poetry run pytest
