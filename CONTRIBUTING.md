@@ -41,7 +41,7 @@ If you are proposing a new feature:
 
 ## Get Started!
 
-Ready to contribute? Here's how to set up `cookiecutter-pypackage` for local development. Please note this documentation assumes you already have `virtualenv` and `Git` installed and ready to go.
+Ready to contribute? Here's how to set up `cookiecutter-pypackage` for local development. Please note this documentation assumes you already have `Poetry` and `Git` installed and ready to go.
 
 1. Fork the `cookiecutter-pypackage` repo on GitHub.
 
@@ -50,17 +50,17 @@ $ cd path_for_the_repo
 $ git clone git@github.com:YOUR_NAME/cookiecutter-pypackage.git
 ```
 
-3. Assuming you have virtualenv installed (If you have Python3.5 this should already be there), you can create a new environment for your local development by typing:
+3. Assuming you have Poetry installed (If you have Python3.6 this should already be there), you can create a new environment and install dependencies for your local development by typing:
 
 ```bash
-$ virtualenv cookiecutter-pypackage-env
-$ source cookiecutter-pypackage-env/bin/activate
+$ cd cookiecutter-pypackage
+$ poetry install
 ```
 
 This should change the shell to look something like:
 
 ```bash
-(cookiecutter-pypackage-env) $
+(cookiecutter-pypackage-oyR8MJ8I-py3.8) $
 ```
 
 4. Create a branch for local development:
@@ -74,13 +74,12 @@ Now you can make your changes locally.
 5. When you're done making changes, check that your changes pass flake8. Since, this package contains mostly templates the flake should be run for tests directory:
 
 ```bash
-$ flake8 ./tests
+$ flake8
 ```
-6. The next step would be to run the test cases. `cookiecutter-pypackage` uses pytest, you can run PyTest. Before you run pytest you should ensure all dependancies are installed:
+6. The next step would be to run the test cases. `cookiecutter-pypackage` uses pytest, you can run PyTest :
 
 ```bash
-$ pip install -rrequirements-dev.txt
-$ pytest ./tests
+$ pytest
 ```
 
 If you get any errors while installing cryptography package (something like `#include <openssl/aes.h>`). Please update your pip version and try again:
@@ -96,8 +95,6 @@ $ pip install -U pip
 $ tox
 ```
 
-If you are missing flake8, pytest and/or tox, just `pip install` them into your virtualenv.
-
 8. If your contribution is a bug fix or new feature, you may want to add a test to the existing test suite. See section Add a New Test below for details.
 
 9. Commit your changes and push your branch to GitHub:
@@ -109,22 +106,6 @@ $ git push origin name-of-your-bugfix-or-feature
 ```
 
 10. Submit a pull request through the GitHub website.
-
-*Alternative to use virtualenv, project is configured for Poetry and use a makefile*
-
-1. Create virtualenv :
-
-```bash
-$ make install
-```
-
-2. Activate env :
-
-```bash
-$ make activate
-```
-
-*Now, you can run flake8, pytests and tox. See help in make file for all commands with `make help`.*
 
 ## Pull Request Guidelines
 
@@ -142,7 +123,7 @@ When fixing a bug or adding features, it's good practice to add a test to demons
 
 To write and run your new test, follow these steps:
 
-1. Add the new test to `tests/test_bake_project.py`. Focus your test on the specific bug or a small part of the new feature.
+1. Add the new test to `tests/`. Focus your test on the specific bug or a small part of the new feature.
 
 2. If you have already made changes to the code, stash your changes and confirm all your changes were stashed:
 
@@ -154,7 +135,7 @@ $ git stash list
 3. Run your test and confirm that your test fails. If your test does not fail, rewrite the test until it fails on the original code:
 
 ```bash
-$ pytest ./tests
+$ pytest
 ```
 
 4. (Optional) Run the tests with tox to ensure that the code changes work with different Python versions:
