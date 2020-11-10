@@ -16,5 +16,6 @@
 - [ ] Add coverage ?
 - [ ] Add in Makefile build, watch and clean documentation for MkDocs
 - [ ] Wrtie documentation
+- [ ] Git stash
 
 ## Template package
