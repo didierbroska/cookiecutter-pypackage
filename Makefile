@@ -84,3 +84,6 @@ test-all: ## run tests on every Python version with tox
 
 lint: ## check style with flake8
 	poetry run flake8
+
+security-check: ## check if you have insecure package in deps
+	poetry run safety check

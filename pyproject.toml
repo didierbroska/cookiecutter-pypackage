@@ -40,6 +40,7 @@ flake8 = "^3.8.4"
 black = "^20.8b1"
 PyYAML = "^5.3.1"
 mkdocs = "^1.1.2"
+safety = "^1.9.0"
 
 [tool.pytest.ini_options]
 minversion = "6.0"
@@ -86,6 +87,7 @@ isolated_build = true
 whitelist_externals = poetry
 commands =
     poetry install -v
+    poetry run safety check
     poetry run pytest tests/
 """
 
