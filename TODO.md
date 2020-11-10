@@ -17,5 +17,7 @@
 - [ ] Add in Makefile build, watch and clean documentation for MkDocs
 - [ ] Wrtie documentation
 - [ ] Git stash
+- [ ] Add bump2version without Poetry.
+- [ ] Python setup (pyenv, poetry, pipx and ...)
 
 ## Template package
