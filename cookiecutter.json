@@ -4,10 +4,10 @@
     "repo_username": "didierbroska",
     "project_name": "Python Boilerplate",
     "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+    "project_dir": "{{ cookiecutter.project_name.lower().replace(' ', '-').replace('_', '-') }}",
     "project_short_description": "Python Boilerplate contains all the boilerplate you need to create a Python package.",
     "pypi_username": "{{ cookiecutter.repo_username }}",
     "version": "0.1.0",
-    "use_pytest": "n",
     "use_pypi_deployment_with_repo_provider": "y",
     "add_pyup_badge": "n",
     "command_line_interface": [
