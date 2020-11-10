@@ -88,5 +88,11 @@ test-all: ## run tests on every Python version with tox
 lint: ## check style with flake8
 	poetry run flake8
 
+sort: ## sort python import
+	poetry run isort tests/ hooks/
+
+format: ## reformat python file
+	poetry run black tests/ hooks/
+
 security-check: ## check if you have insecure package in deps
 	poetry run safety check
