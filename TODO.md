@@ -14,5 +14,7 @@
 - [x] Integrate `tox` setup in [pyproject.toml](./pyproject.toml)
 - [x] Update [Makefile](./Makefile)
 - [ ] Add coverage ?
+- [ ] Add in Makefile build, watch and clean documentation for MkDocs
+- [ ] Wrtie documentation
 
 ## Template package
