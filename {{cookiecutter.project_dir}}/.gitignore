@@ -103,3 +103,13 @@ ENV/
 
 # IDE settings
 .vscode/
+
+# Backups
+*.new/
+*.old/
+*.old
+*.back
+*.backup
+
+# MkDocs
+site/
