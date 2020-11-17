@@ -1,5 +1,7 @@
 # Cookiecutter PyPackage (Broska Version)
 
+![Python version](https://img.shields.io/badge/python-3.6%20%7C%203.7%20%7C%203.8%20%7C%203.9-blue)
+
 ![Safety](https://github.com/didierbroska/cookiecutter-pypackage/workflows/Safety/badge.svg) ![Linux Tests](https://github.com/didierbroska/cookiecutter-pypackage/workflows/Linux%20Tests/badge.svg) ![MacOS Tests](https://github.com/didierbroska/cookiecutter-pypackage/workflows/MacOs%20Tests/badge.svg) ![Windows Tests](https://github.com/didierbroska/cookiecutter-pypackage/workflows/Windows%20Tests/badge.svg)
 
 ---
