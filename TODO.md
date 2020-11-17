@@ -8,6 +8,7 @@
 - [ ] Git stash
 - [ ] Docs - Python setup (pyenv, poetry, pipx and ...) and refere in README
 - [x] hooks copy README, CONTRIBUTING HISTORY and AUTHORS in docs
+- [ ] Make a common safety actions for badge
 
 ### Add compatibilty
 
