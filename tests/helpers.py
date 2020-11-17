@@ -29,7 +29,9 @@ def run_inside_dir(command, dirpath):
     """
     with inside_dir(dirpath):
         posix = os.name != "nt"
-        return subprocess.check_call(shlex.split(command, posix=posix))
+        return subprocess.check_call(
+            shlex.split(command, posix=posix), shell=True
+        )
 
 
 @contextmanager
