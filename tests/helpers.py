@@ -43,4 +43,3 @@ def bake_in_temp_dir(cookies, *args, **kwargs):
         yield result
     finally:
         rmtree(str(result.project))
-
