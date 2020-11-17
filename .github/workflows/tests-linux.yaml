@@ -27,5 +27,11 @@ jobs:
     - name: Install dependencies
       run: |
         poetry install -v
+    - name: Check lint
+      run: poetry run flake8 tests/
+    - name: Check sorting import
+      run: poetry run isort --check tests/
+    - name: Check formating code
+      run: poetry run black --check tests/
     - name: Run tests
       run: poetry run pytest tests/
