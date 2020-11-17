@@ -1,6 +1,6 @@
 # Cookiecutter PyPackage (Broska Version)
 
-[Safety](https://github.com/didierbroska/cookiecutter-pypackage/workflows/Safety/badge.svg) ![Linux Tests](https://github.com/didierbroska/cookiecutter-pypackage/workflows/Linux%20Tests/badge.svg) ![MacOS Tests](https://github.com/didierbroska/cookiecutter-pypackage/workflows/MacOs%20Tests/badge.svg) ![Windows Tests](https://github.com/didierbroska/cookiecutter-pypackage/workflows/Windows%20Tests/badge.svg)
+![Safety](https://github.com/didierbroska/cookiecutter-pypackage/workflows/Safety/badge.svg) ![Linux Tests](https://github.com/didierbroska/cookiecutter-pypackage/workflows/Linux%20Tests/badge.svg) ![MacOS Tests](https://github.com/didierbroska/cookiecutter-pypackage/workflows/MacOs%20Tests/badge.svg) ![Windows Tests](https://github.com/didierbroska/cookiecutter-pypackage/workflows/Windows%20Tests/badge.svg)
 
 ---
 
