@@ -86,7 +86,7 @@ test-all: ## run tests on every Python version with tox
 	poetry run tox
 
 lint: ## check style with flake8
-	poetry run flake8
+	poetry run flake8 tests/ hooks/
 
 sort: ## sort python import
 	poetry run isort tests/ hooks/
