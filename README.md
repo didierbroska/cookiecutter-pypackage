@@ -1,5 +1,9 @@
 # Cookiecutter PyPackage (Broska Version)
 
+![Linux Tests](https://github.com/didierbroska/cookiecutter-pypackage/workflows/Linux%20Tests/badge.svg) ![MacOS Tests](https://github.com/didierbroska/cookiecutter-pypackage/workflows/MacOs%20Tests/badge.svg) ![Windows Tests](https://github.com/didierbroska/cookiecutter-pypackage/workflows/Windows%20Tests/badge.svg)
+
+---
+
 [Cookiecutter](https://github.com/cookiecutter/cookiecutter
 ) template for Python package.
 
