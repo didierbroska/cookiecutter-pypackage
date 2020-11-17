@@ -2,6 +2,7 @@
 
 import datetime
 
+import pytest
 from helpers import bake_in_temp_dir, run_inside_dir
 
 
@@ -117,6 +118,7 @@ def test_bake_not_open_source(cookies):
         # TODO add test for include
 
 
+@pytest.mark.skip(reason="Problem to run under windows")
 def test_bake_and_run_tests(cookies):
     with bake_in_temp_dir(cookies) as result:
         assert result.project.isdir()
