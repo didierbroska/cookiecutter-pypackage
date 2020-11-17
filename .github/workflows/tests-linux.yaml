@@ -27,7 +27,5 @@ jobs:
     - name: Install dependencies
       run: |
         poetry install -v
-    - name: Run safety
-      run: poetry run safety check
     - name: Run tests
       run: poetry run pytest tests/

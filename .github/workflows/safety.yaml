@@ -1,4 +1,4 @@
-name: Windows Tests
+name: Safety
 
 on: [push]
 
@@ -11,8 +11,12 @@ jobs:
         matrix:
             # https://help.github.com/articles/virtual-environments-for-github-actions
             platform:
+            - ubuntu-16.04
+            - ubuntu-20.04
+            - ubuntu-latest  # ubuntu-18.04
             - windows-2016
             - windows-latest  # windows-2019
+            - macos-latest  # macOS-10.14
             python-version: [3.6, 3.7, 3.8, 3.9]
 
     steps:
@@ -26,5 +30,5 @@ jobs:
     - name: Install dependencies
       run: |
         poetry install -v
-    - name: Run tests
-      run: poetry run pytest tests/
+    - name: Run safety
+      run: poetry run safety check
