@@ -28,6 +28,8 @@ def run_inside_dir(command, dirpath):
     :param dirpath: String, path of the directory the command is being run.
     """
     with inside_dir(dirpath):
+        # FIXME problem to run under Windows
+        # return subprocess.check_call(shlex.split(command))
         posix = os.name != "nt"
         return subprocess.check_call(
             shlex.split(command, posix=posix), shell=True
