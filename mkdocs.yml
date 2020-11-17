@@ -1,0 +1,4 @@
+site_name: Cookiecutter PyPackage
+
+markdown_extensions:
+    - admonition
