@@ -1,7 +1,6 @@
 # coding: utf-8
 
 import datetime
-import os
 
 from helpers import bake_in_temp_dir, run_inside_dir
 
@@ -121,18 +120,8 @@ def test_bake_not_open_source(cookies):
 def test_bake_and_run_tests(cookies):
     with bake_in_temp_dir(cookies) as result:
         assert result.project.isdir()
-        if os.name == "nt":
-            run_inside_dir(
-                "%USERPROFILE%\\.poetry\\bin\\poetry install -v",
-                str(result.project),
-            ) == 0
-            run_inside_dir(
-                "%USERPROFILE%\\.poetry\\bin\\poetry run pytest",
-                str(result.project),
-            ) == 0
-        else:
-            run_inside_dir("poetry install -v", str(result.project)) == 0
-            run_inside_dir("poetry run pytest", str(result.project)) == 0
+        run_inside_dir("poetry install -v", str(result.project)) == 0
+        run_inside_dir("poetry run pytest", str(result.project)) == 0
         print("test_bake_and_run_tests path", str(result.project))
 
 
