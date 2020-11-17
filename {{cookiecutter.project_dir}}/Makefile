@@ -62,24 +62,27 @@ coverage: ## check code coverage quickly with the default Python
 	coverage html
 	$(BROWSER) htmlcov/index.html
 
-# docs: ## generate Sphinx HTML documentation, including API docs
-# 	rm -f docs/{{ cookiecutter.project_slug }}.rst
-# 	rm -f docs/modules.rst
-# 	sphinx-apidoc -o docs/ {{ cookiecutter.project_slug }}
-# 	$(MAKE) -C docs clean
-# 	$(MAKE) -C docs html
-# 	$(BROWSER) docs/_build/html/index.html
+docs: ## generate MkDocs HTML documentation, including API docs
+	rm -rf site/
+	cp README.md docs/readme2.md
+	cp CONTRIBUTING.md docs/
+	cp HISTORY.md docs/
+{%- if cookiecutter.create_author_file == 'y' %}
+	cp AUTHORS.md docs/
+{%- endif %}
+	poetry run mkdocs build
 
-# servedocs: docs ## compile the docs watching for changes
-# 	watchmedo shell-command -p '*.rst' -c '$(MAKE) -C docs html' -R -D .
+servedocs: docs ## compile the docs watching for changes
+	poetry run mkdocs serve
+	$(BROWSER) http://127.0.0.1:8000
 
-release: dist ## package and upload a release
-	twine upload dist/*
+# release: dist ## package and upload a release
+# 	twine upload dist/*
 
-dist: clean ## builds source and wheel package
-	python setup.py sdist
-	python setup.py bdist_wheel
-	ls -l dist
+# dist: clean ## builds source and wheel package
+# 	python setup.py sdist
+# 	python setup.py bdist_wheel
+# 	ls -l dist
 
-install: clean ## install the package to the active Python's site-packages
-	python setup.py install
+# install: clean ## install the package to the active Python's site-packages
+# 	python setup.py install

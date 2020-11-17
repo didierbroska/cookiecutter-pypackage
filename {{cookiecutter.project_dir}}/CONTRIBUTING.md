@@ -30,7 +30,7 @@ Look through the GitHub issues for features. Anything tagged with "enhancement" 
 
 ### Submit Feedback
 
-The best way to send feedback is to file an issue at https://github.com/{{ cookiecutter.repo_username }}/{{ cookiecutter.project_slug }}/issues.
+The best way to send feedback is to file an issue at https://github.com/{{ cookiecutter.repo_username }}/{{ cookiecutter.project_dir }}/issues.
 
 If you are proposing a feature:
 
@@ -40,19 +40,19 @@ If you are proposing a feature:
 
 ## Get Started !
 
-Ready to contribute? Here's how to set up `{{ cookiecutter.project_slug }}` for local development.
+Ready to contribute? Here's how to set up `{{ cookiecutter.project_dir }}` for local development.
 
-1. Fork the `{{ cookiecutter.project_slug }}` repo on GitHub.
+1. Fork the `{{ cookiecutter.project_dir }}` repo on GitHub.
 2. Clone your fork locally :
 
 ```bash
-$ git clone git@github.com:your_name_here/{{ cookiecutter.project_slug }}.git
+$ git clone git@github.com:your_name_here/{{ cookiecutter.project_dir }}.git
 ```
 
 3. Install your local copy into a virtualenv. Assuming you have poetry installed, this is how you set up your fork for local development :
 
 ```bash
-$ cd {{ cookiecutter.project_slug }}/
+$ cd {{ cookiecutter.project_dir }}/
 $ poetry install
 ```
 
