@@ -80,7 +80,7 @@ clean-docs: ## remove building documentation
 	rm -rf site/
 
 test: ## run tests quickly with the default Python
-	poetry run pytest
+	poetry run pytest --cov={{cookiecutter.project_dir}} --cov=hooks/ --cov-fail-under=100 tests
 
 test-all: ## run tests on every Python version with tox
 	poetry run tox
